@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/Product%20preview%20card%20component">
+    <a href="https://www.frontendmentor.io/solutions/product-preview-card-component-o9yf52Eldf">
       Solution
     </a>
    <span> | </span>
