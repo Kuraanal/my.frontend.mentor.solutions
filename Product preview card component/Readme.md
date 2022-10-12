@@ -1,3 +1,6 @@
+<div align="center">
+<img src="./Screenshots/Desktop.png">
+</div>
 <h1 align="center"> Product preview card component</h1>
 
 <div align="center">
