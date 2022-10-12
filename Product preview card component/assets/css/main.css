@@ -98,6 +98,8 @@ body{
  align-items: center;
 }
 
+/* Card elements */
+
 .card{
     background-color: hsl(var(--clr-neutral-light));
     color: hsl(var(--clr-neutral));
@@ -135,14 +137,14 @@ body{
     margin-bottom: 0.5em;
 }
 
-.product-card__type{
+.card__type{
     letter-spacing: 0.35em;
     font-size: 0.85em;
     color: hsl(var(--clr-neutral));
     font-weight: 300;
 }
 
-.product-card__title{
+.card__title{
     color: hsl(var(--clr-neutral-dark));
 
     font-size: var(--fs-700);
@@ -151,7 +153,7 @@ body{
     line-height: 1em;
 }
 
-.product-card__price{
+.card__price{
     color: hsl(var(--clr-primary-dark));
     font-size: var(--fs-700);
     font-family: var(--ff-secondary);
@@ -160,7 +162,7 @@ body{
     gap: 0.35em;
 }
 
-.product-card__price--barred{
+.card__price--barred{
     text-decoration: line-through;
     font-family: var(--ff-primary);
     color: hsl(var(--clr-neutral));
@@ -169,24 +171,25 @@ body{
     align-self: center;
 }
 
-.product-card__button{
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card__button{
     border: 0;
     background-color: hsl(var(--clr-primary-dark));
     color: hsl(var(--clr-neutral-light));
     padding: 0.5em;
-
     font-weight: 600;
-
     border-radius: 0.5em;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+    transition: ease-in-out 0.5s;
 }
 
-.product-card__button:hover{
+.card__button:hover{
     background-color: hsl(var(--clr-accent));
     color: hsl(var(--clr-primary));
 }
@@ -212,5 +215,5 @@ body{
 }
 
 .attribution{
-    margin-top: 1.25em;
+    margin-top: 1.5em;
 }
