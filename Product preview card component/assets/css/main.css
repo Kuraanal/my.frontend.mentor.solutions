@@ -119,10 +119,6 @@ body{
     padding: 0;
 }
 
-.desktop{
-    display: none;
-}
-
 .card__content{
     padding-bottom: 1.5em;
 
@@ -196,17 +192,8 @@ body{
 
 @media only screen and (min-width: 760px) {
     .card{
-        width: 60%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .mobile{
-        display: none;
-    }
-
-    .desktop{
-        display: block;
     }
 
     .card__content{
@@ -215,5 +202,8 @@ body{
 }
 
 .attribution{
-    margin-top: 1.5em;
+  margin-top: 1.5em;
+  font-size: 11px; text-align: center;
 }
+
+.attribution a { color: hsl(228, 45%, 44%); }
