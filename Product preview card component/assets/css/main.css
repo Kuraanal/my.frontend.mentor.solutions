@@ -134,10 +134,10 @@ body{
 }
 
 .card__type{
-    letter-spacing: 0.35em;
+    letter-spacing: 0.5em;
     font-size: 0.85em;
     color: hsl(var(--clr-neutral));
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .card__title{
