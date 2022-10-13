@@ -1,0 +1,137 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+
+  --clr-primary: hsl(218, 44%, 22%);
+  --clr-secondary: hsl(220, 15%, 55%);
+  --clr-neutral: hsl(0, 0%, 100%);
+  --clr-neutral-dark: hsl(212, 45%, 89%);
+
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.1rem;
+  --fs-600: 1.2rem;
+  --fs-700: 1.5rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --ff-primary: 'Karla', sans-serif;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* */
+
+body{
+  padding: 0.75rem 1.5rem;
+  background-color: var(--clr-neutral-dark);
+
+  font-size: 0.935rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--clr-primary);
+}
+
+main{
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* QR Code component */
+
+.card{
+  background-color: var(--clr-neutral);
+  padding: 0.875em;
+  border-radius: 0.875em;
+  max-width: 320px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > *:not(:first-child){
+  padding: 0.25em 0.3em;
+  text-align: center;
+}
+
+.card__picture{
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.card__title{
+  font-size: var(--fs-700);
+}
+
+.card__text{
+  color: var(--clr-secondary);
+  font-size: var(--fs-500);
+}
