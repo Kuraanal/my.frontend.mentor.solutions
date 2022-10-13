@@ -9,3 +9,8 @@
  ## Single price grid component
 
  [Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Single%20price%20grid%20component) | [Repo](./Single%20price%20grid%20component/) | [Try it out](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+
+ ## QR Code component
+
+[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/QR%20code%20component/) | [Repo](./QR%20code%20component/) | [Try it out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+

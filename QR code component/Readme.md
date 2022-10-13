@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/profile/Kuraanal">
+    <a href="https://www.frontendmentor.io/solutions/qr-code-component-with-flex-q3SfuGPMxy">
       Solution
     </a>
    <span> | </span>
