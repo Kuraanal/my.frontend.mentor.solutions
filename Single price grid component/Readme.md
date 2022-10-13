@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-5ce41129d0ff452fec5abbbc">
+    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-using-flex-R4_rF-y_jF">
       Solution
     </a>
    <span> | </span>
