@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/calculator-app-with-data-attributes-Oo50d57x5Z">
       Solution
     </a>
    <span> | </span>
