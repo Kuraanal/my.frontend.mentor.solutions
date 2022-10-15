@@ -14,6 +14,10 @@
 
 [Live](https://kuraanal.github.io/my.frontend.mentor.solutions/QR%20code%20component/) | [Repo](./QR%20code%20component/) | [Try it out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
+## 3-column preview card component
+
+[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/3-column%20preview%20card%20component/) | [Repo](./3-column%20preview%20card%20component/) | [Try it out](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+
 ## Calculator App
 
 [Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Calculator%20app/) | [Repo](./Calculator%20app/) | [Try it out](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)

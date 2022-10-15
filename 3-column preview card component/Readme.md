@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/3column-card-with-flex-X_7ruie20P">
       Solution
     </a>
    <span> | </span>
