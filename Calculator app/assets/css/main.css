@@ -1,0 +1,297 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root{
+    --fs-400: 14px;
+    --fs-500: 1.5rem;
+    --fs-600: 1.6875rem;
+    --fs-700: 2.5rem;
+    --fs-900: 3.5rem;
+
+    --ff-primary: 'League Spartan', sans-serif;
+}
+
+/* Themes */
+body[data-theme="1"]{
+    --clr-page-background: hsl(222, 26%, 31%);
+    --clr-screen-background: hsl(224, 36%, 15%);
+    --clr-calc-background: hsl(223, 31%, 20%);
+    --clr-page-text: hsl(0, 0%, 100%);
+    --clr-key-text: hsl(221, 14%, 31%);
+    --clr-key-variant1-text: hsl(0, 0%, 100%);
+    --clr-key-variant2-text: hsl(0, 0%, 100%);
+    --clr-key-background: hsl(30, 25%, 89%);
+    --clr-key-shadow: hsl(28, 16%, 65%);
+    --clr-key-variant1-background: hsl(225, 21%, 49%);
+    --clr-key-variant1-shadow: hsl(224, 28%, 35%);
+    --clr-key-variant2-background: hsl(6, 63%, 50%);
+    --clr-key-variant2-shadow: hsl(6, 70%, 34%);
+}
+
+body[data-theme="2"]{
+    --clr-page-background: hsl(0, 0%, 90%);
+    --clr-screen-background: hsl(0, 0%, 93%);
+    --clr-calc-background: hsl(0, 5%, 81%);
+    --clr-page-text: hsl(60, 10%, 19%);
+    --clr-key-text: hsl(60, 10%, 19%);
+    --clr-key-variant1-text: hsl(0, 0%, 100%);
+    --clr-key-variant2-text: hsl(0, 0%, 100%);
+    --clr-key-background: hsl(45, 7%, 89%);
+    --clr-key-shadow: hsl(35, 11%, 61%);
+    --clr-key-variant1-background: hsl(185, 42%, 37%);
+    --clr-key-variant1-shadow: hsl(185, 58%, 25%);
+    --clr-key-variant2-background: hsl(25, 98%, 40%);
+    --clr-key-variant2-shadow: hsl(25, 99%, 27%);
+}
+
+body[data-theme="3"]{
+    --clr-page-background: hsl(268, 75%, 9%);
+    --clr-screen-background: hsl(268, 71%, 12%);
+    --clr-calc-background: hsl(268, 71%, 12%);
+    --clr-page-text: hsl(52, 100%, 62%);
+    --clr-key-text: hsl(52, 100%, 62%);
+    --clr-key-variant1-text: hsl(0, 0%, 100%);
+    --clr-key-variant2-text: hsl(198, 20%, 13%);
+    --clr-key-background: hsl(268, 47%, 21%);
+    --clr-key-shadow: hsl(290, 70%, 36%);
+    --clr-key-variant1-background: hsl(281, 89%, 26%);
+    --clr-key-variant1-shadow: hsl(285, 91%, 52%);
+    --clr-key-variant2-background: hsl(176, 100%, 44%);
+    --clr-key-variant2-shadow: hsl(177, 92%, 70%);
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-page-background);
+    color: var(--clr-page-text);
+    font-family: var(--ff-primary);
+}
+
+/* Calculator */
+
+.calc{
+    width: 327px;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: var(--fs-700);
+}
+
+@media screen and (min-width:376px){
+    .calc{
+        width: 100%;
+    }
+}
+
+.calc__title{
+    font-size: var(--fs-500);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.calc__themes{
+    display: flex;
+    flex-direction: row;
+    flex-grow:  2;
+    justify-content: right;
+    gap: 0.875rem;
+}
+
+.calc__slider{
+    width: 72px;
+    height: 26px;
+    cursor: pointer;
+    background: var(--clr-calc-background);
+    border-radius: 14px;
+    padding: 5px;
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+}
+
+.calc__slider::before{
+    position: absolute;
+    font-size: var(--fs-500);
+    content: "1 2 3";
+    letter-spacing: 3px;
+    margin-top: -37px;
+    color: var(--clr-page-text);
+}
+
+.calc__slider::-ms-track {
+    width: 72px;
+    height: 26px;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.calc__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 19px;
+    width: 19px;
+    border-radius: 10px;
+    background: var(--clr-key-variant2-background);
+    cursor: pointer;
+}
+
+.calc__buttons{
+    background-color: var(--clr-calc-background);
+    width: 100%;
+    padding: 1.875rem;
+    display: grid;
+    gap: 1.5625rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "seven eight nine del"
+    "four five six add"
+    "one two three substract"
+    "dot zero divide multiply"
+    "reset reset equal equal";
+    font-size: var(--fs-600);
+    border-radius: 1rem;
+}
+
+.calc__screen{
+    background-color: var(--clr-screen-background);
+    height: 128px;
+    padding: 1.5rem 0.5em;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: var(--fs-900);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.calc__result{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.calc__prevResult{
+    width: 100%;
+    font-size: 0.25em;
+    text-align: right;
+}
+
+.calc__key{
+    height: 60px;
+    border: 0;
+    border-radius: 0.25em;
+    padding: 1rem;
+    background-color: var(--clr-key-background);
+    box-shadow: 0 4px var(--clr-key-shadow);
+    color: var(--clr-key-text);
+}
+
+.calc__key:hover{
+    background-color: var(--clr-key-shadow);
+    cursor: pointer;
+}
+
+.calc__key--variant2{
+    background-color: var(--clr-key-variant2-background);
+    box-shadow: 0 4px var(--clr-key-variant2-shadow);
+    color: var(--clr-key-variant2-text);
+}
+
+.calc__key--variant2:hover{
+    background-color: var(--clr-key-variant2-shadow);
+}
+
+.calc__key--variant1{
+    background-color: var(--clr-key-variant1-background);
+    box-shadow: 0 4px var(--clr-key-variant1-shadow);
+    color: var(--clr-key-variant1-text);
+}
+
+.calc__key--variant1:hover{
+    background-color: var(--clr-key-variant1-shadow);
+}
+
+@media screen and (max-width:375px){
+    .calc{
+        font-size: var(--fs-400);
+    }
+
+    .calc__buttons{
+        font-size: 1.25em;
+        padding: 1.5em;
+        gap: 1.25em;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/javascript/app.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body data-theme="1">
+  <main class="calc">
+    <div class="calc__title">
+      <h1>Calc</h1>
+      <div class="calc__themes">
+        <span>theme</span>
+        <input class="calc__slider" type="range" name="theme" id="themeSlider" min="1" max="3" step="1" value="1">
+      </div>
+    </div>
+    <div class="calc__screen">
+      <span class="calc__prevResult">0</span>
+      <span class="calc__result">0</span>
+    </div>
+    <div class="calc__buttons">
+      <button class="calc__key" id="one" data-type="number" data-value="1" style="grid-area: one">1</button>
+      <button class="calc__key" id="two" data-type="number" data-value="2" style="grid-area: two">2</button>
+      <button class="calc__key" id="three" data-type="number" data-value="3" style="grid-area: three">3</button>
+      <button class="calc__key" id="four" data-type="number" data-value="4" style="grid-area: four">4</button>
+      <button class="calc__key" id="five" data-type="number" data-value="5" style="grid-area: five">5</button>
+      <button class="calc__key" id="six" data-type="number" data-value="6" style="grid-area: six">6</button>
+      <button class="calc__key" id="seven" data-type="number" data-value="7" style="grid-area: seven">7</button>
+      <button class="calc__key" id="eight" data-type="number" data-value="8" style="grid-area: eight">8</button>
+      <button class="calc__key" id="nine" data-type="number" data-value="9" style="grid-area: nine">9</button>
+      <button class="calc__key" id="zero" data-type="number" data-value="0" style="grid-area: zero">0</button>
+      <button class="calc__key" id="dot" data-type="number" data-value="." style="grid-area: dot">.</button>
+      <button class="calc__key" id="divide" data-type="modifier" data-value="/" style="grid-area: divide">/</button>
+      <button class="calc__key calc__key--variant1" id="del" data-type="action" data-value="delete" style="grid-area: del">DEL</button>
+      <button class="calc__key" id="add" data-type="modifier" data-value="+" style="grid-area: add">+</button>
+      <button class="calc__key" id="substract" data-type="modifier" data-value="-" style="grid-area: substract">-</button>
+      <button class="calc__key" id="multiply" data-type="modifier" data-value="*" style="grid-area: multiply">x</button>
+      <button class="calc__key  calc__key--variant1" id="reset" data-type="action" data-value="reset" style="grid-area: reset;">RESET</button>
+      <button class="calc__key calc__key--variant2" id="equal" data-type="action" data-value="=" style="grid-area: equal;">=</button>
+    </div>
+  </main>
+</body>
+</html>

@@ -14,3 +14,6 @@
 
 [Live](https://kuraanal.github.io/my.frontend.mentor.solutions/QR%20code%20component/) | [Repo](./QR%20code%20component/) | [Try it out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
+## Calculator App
+
+[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Calculator%20app/) | [Repo](./Calculator%20app/) | [Try it out](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
