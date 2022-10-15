@@ -1,0 +1,172 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+
+    --clr-block1: hsl(31, 77%, 52%);
+    --clr-block2: hsl(184, 100%, 22%);
+    --clr-block3: hsl(179, 100%, 13%);
+
+    --clr-neutral: hsl(0, 0%, 95%);
+    --clr-neutral-transparent: hsla(0, 0%, 100%, 0.6);
+
+    --ff-primary: 'Lexend Deca', sans-serif;;
+    --ff-secondary: 'Big Shoulders Display', cursive;;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* */
+
+body{
+    font-family: var(--ff-primary);
+    font-size: 0.9375rem;
+    padding: 5.5em 1.5em 0 1.5em;
+    background-color: var(--clr-neutral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 57.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.container__block{
+    flex: 1;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.block__title{
+    font-family: var(--ff-secondary);
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--clr-neutral);
+    text-transform: uppercase;
+}
+
+.block__text{
+font-weight: 400;
+    color: var(--clr-neutral-transparent);
+}
+
+.block__logo{
+    width: 4em;
+    height: 2.5em;
+}
+
+.block__button{
+    border: 0.125em solid var(--clr-neutral);
+    background-color: var(--clr-neutral);
+    width: 9.25em;
+    height: 3em;
+    border-radius: 2em;
+    color: #000;
+    mix-blend-mode: screen;
+    font-family: var(--ff-secondary);
+}
+
+.block__button:hover{
+background-color: transparent;
+color: var(--clr-neutral);
+}
+
+.sedans{
+    background-color: var(--clr-block1);
+}
+
+.suvs{
+ background-color: var(--clr-block2);
+}
+
+.luxury{
+ background-color: var(--clr-block3);
+}
+
+@media screen and (min-width: 925px ){
+    body{
+        padding: 0;
+    }
+
+    .container{
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .block__button{
+        margin-top: 3em;
+    }
+}
