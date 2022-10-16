@@ -129,14 +129,20 @@ font-weight: 400;
 }
 
 .block__button{
+    display: block;
     border: 0.125em solid var(--clr-neutral);
     background-color: var(--clr-neutral);
     width: 9.25em;
     height: 3em;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6em 0;
     border-radius: 2em;
     color: #000;
     mix-blend-mode: screen;
     font-family: var(--ff-secondary);
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 .block__button:hover{

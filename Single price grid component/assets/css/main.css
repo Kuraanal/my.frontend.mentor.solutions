@@ -5,7 +5,7 @@
     --clr-primary-light: hsl(179, 62%, 43%);
     --clr-primary: #4ABEBD;
     --clr-accent: hsl(71, 73%, 54%);
-    --clr-accent-dark: hsl(71, 60%, 39%);
+    --clr-accent-light: hsl(71, 73%, 64%);
     --clr-neutral-light: hsl(204, 43%, 93%);
     --clr-neutral: hsl(218, 22%, 67%);
 
@@ -117,7 +117,7 @@ ul{
 }
 
 .card__item{
-    padding: 1.875em;
+    padding: 2.5em;
 }
 
 .card__item:not(:first-child){
@@ -162,6 +162,8 @@ ul{
 }
 
 .card__button{
+
+    display: block;
     border: 0;
     width: 100%;
 
@@ -171,6 +173,7 @@ ul{
     padding: 0.75rem 0;
 
     font-weight: 600;
+    text-align: center;
 
     border-radius: 0.25em;
     transition: ease-in-out 0.5s;
@@ -178,7 +181,7 @@ ul{
 }
 
 .card__button:hover{
-    background-color: var(--clr-accent-dark);
+    background-color: var(--clr-accent-light);
 }
 
 @media screen and (min-width: 760px ){
@@ -197,8 +200,3 @@ ul{
         width: 100%;
     }
 }
-
-/* Frontend Mentor */
-
-.attribution { font-size: 11px; text-align: center;  }
-.attribution a { color: hsl(228, 45%, 44%); }

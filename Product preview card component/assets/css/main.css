@@ -159,7 +159,6 @@ body{
 }
 
 .card__price--barred{
-    text-decoration: line-through;
     font-family: var(--ff-primary);
     color: hsl(var(--clr-neutral));
     font-size: 0.4em;
@@ -200,10 +199,3 @@ body{
         padding: 2em 4em;
     }
 }
-
-.attribution{
-  margin-top: 1.5em;
-  font-size: 11px; text-align: center;
-}
-
-.attribution a { color: hsl(228, 45%, 44%); }
