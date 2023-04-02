@@ -1,7 +1,7 @@
 /* Variables */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-:root{
+:root {
 
   --clr-primary: hsl(218, 44%, 22%);
   --clr-secondary: hsl(220, 15%, 55%);
@@ -70,9 +70,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -85,7 +85,7 @@ select {
 
 /* */
 
-body{
+body {
   padding: 0.75rem 1.5rem;
   background-color: var(--clr-neutral-dark);
 
@@ -94,7 +94,7 @@ body{
   color: var(--clr-primary);
 }
 
-main{
+main {
   max-width: 1440px;
   height: 100vh;
   margin: auto;
@@ -105,7 +105,7 @@ main{
 
 /* QR Code component */
 
-.card{
+.card {
   background-color: var(--clr-neutral);
   padding: 0.875em;
   border-radius: 0.875em;
@@ -115,23 +115,25 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 0.25rem 0.5rem 0.7rem var(--clr-secondary);
 }
 
-.card > *:not(:first-child){
+.card>*:not(:first-child) {
   padding: 0.25em 0.3em;
   text-align: center;
 }
 
-.card__picture{
+.card__picture {
   border-radius: 0.5em;
   overflow: hidden;
 }
 
-.card__title{
+.card__title {
   font-size: var(--fs-700);
 }
 
-.card__text{
+.card__text {
   color: var(--clr-secondary);
   font-size: var(--fs-500);
 }

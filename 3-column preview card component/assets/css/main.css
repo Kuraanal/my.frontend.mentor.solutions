@@ -1,17 +1,20 @@
 /* Variables */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-:root{
+:root {
 
-    --clr-block1: hsl(31, 77%, 52%);
-    --clr-block2: hsl(184, 100%, 22%);
-    --clr-block3: hsl(179, 100%, 13%);
+  --clr-block1: hsl(31, 77%, 52%);
+  --clr-block2: hsl(184, 100%, 22%);
+  --clr-block3: hsl(179, 100%, 13%);
 
-    --clr-neutral: hsl(0, 0%, 95%);
-    --clr-neutral-transparent: hsla(0, 0%, 100%, 0.6);
+  --clr-neutral: hsl(0, 0%, 95%);
+  --clr-neutral-dark: hsl(0, 0%, 48%);
+  --clr-neutral-transparent: hsla(0, 0%, 100%, 0.6);
 
-    --ff-primary: 'Lexend Deca', sans-serif;;
-    --ff-secondary: 'Big Shoulders Display', cursive;;
+  --ff-primary: 'Lexend Deca', sans-serif;
+  ;
+  --ff-secondary: 'Big Shoulders Display', cursive;
+  ;
 }
 
 /* Reset */
@@ -69,9 +72,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -84,95 +87,97 @@ select {
 
 /* */
 
-body{
-    font-family: var(--ff-primary);
-    font-size: 0.9375rem;
-    padding: 5.5em 1.5em 0 1.5em;
-    background-color: var(--clr-neutral);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: var(--ff-primary);
+  font-size: 0.9375rem;
+  padding: 5.5em 1.5em 0 1.5em;
+  background-color: var(--clr-neutral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    max-width: 57.5rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.5em;
-    overflow: hidden;
+.container {
+  max-width: 57.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em;
+  overflow: hidden;
+
+  box-shadow: 0.2rem 0.5rem 0.7rem var(--clr-neutral-dark);
 }
 
-.container__block{
-    flex: 1;
-    padding: 3em;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+.container__block {
+  flex: 1;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
-.block__title{
-    font-family: var(--ff-secondary);
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--clr-neutral);
-    text-transform: uppercase;
+.block__title {
+  font-family: var(--ff-secondary);
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--clr-neutral);
+  text-transform: uppercase;
 }
 
-.block__text{
-font-weight: 400;
-    color: var(--clr-neutral-transparent);
+.block__text {
+  font-weight: 400;
+  color: var(--clr-neutral-transparent);
 }
 
-.block__logo{
-    width: 4em;
-    height: 2.5em;
+.block__logo {
+  width: 4em;
+  height: 2.5em;
 }
 
-.block__button{
-    display: block;
-    border: 0.125em solid var(--clr-neutral);
-    background-color: var(--clr-neutral);
-    width: 9.25em;
-    height: 3em;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.6em 0;
-    border-radius: 2em;
-    color: #000;
-    mix-blend-mode: screen;
-    font-family: var(--ff-secondary);
-    font-weight: 700;
-    font-size: 1.2em;
+.block__button {
+  display: block;
+  border: 0.125em solid var(--clr-neutral);
+  background-color: var(--clr-neutral);
+  width: 9.25em;
+  height: 3em;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6em 0;
+  border-radius: 2em;
+  color: #000;
+  mix-blend-mode: screen;
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
-.block__button:hover{
-background-color: transparent;
-color: var(--clr-neutral);
+.block__button:hover {
+  background-color: transparent;
+  color: var(--clr-neutral);
 }
 
-.sedans{
-    background-color: var(--clr-block1);
+.sedans {
+  background-color: var(--clr-block1);
 }
 
-.suvs{
- background-color: var(--clr-block2);
+.suvs {
+  background-color: var(--clr-block2);
 }
 
-.luxury{
- background-color: var(--clr-block3);
+.luxury {
+  background-color: var(--clr-block3);
 }
 
-@media screen and (min-width: 925px ){
-    body{
-        padding: 0;
-    }
+@media screen and (min-width: 925px) {
+  body {
+    padding: 0;
+  }
 
-    .container{
-        flex-direction: row;
-        height: fit-content;
-    }
+  .container {
+    flex-direction: row;
+    height: fit-content;
+  }
 
-    .block__button{
-        margin-top: 3em;
-    }
+  .block__button {
+    margin-top: 3em;
+  }
 }
