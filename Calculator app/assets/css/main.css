@@ -1,7 +1,7 @@
 /* Variables */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
-:root{
+:root {
     --fs-400: 14px;
     --fs-500: 1.5rem;
     --fs-600: 1.6875rem;
@@ -12,7 +12,7 @@
 }
 
 /* Themes */
-body[data-theme="1"]{
+html[data-theme="1"] {
     --clr-page-background: hsl(222, 26%, 31%);
     --clr-screen-background: hsl(224, 36%, 15%);
     --clr-calc-background: hsl(223, 31%, 20%);
@@ -28,7 +28,7 @@ body[data-theme="1"]{
     --clr-key-variant2-shadow: hsl(6, 70%, 34%);
 }
 
-body[data-theme="2"]{
+html[data-theme="2"] {
     --clr-page-background: hsl(0, 0%, 90%);
     --clr-screen-background: hsl(0, 0%, 93%);
     --clr-calc-background: hsl(0, 5%, 81%);
@@ -44,7 +44,7 @@ body[data-theme="2"]{
     --clr-key-variant2-shadow: hsl(25, 99%, 27%);
 }
 
-body[data-theme="3"]{
+html[data-theme="3"] {
     --clr-page-background: hsl(268, 75%, 9%);
     --clr-screen-background: hsl(268, 71%, 12%);
     --clr-calc-background: hsl(268, 71%, 12%);
@@ -65,7 +65,7 @@ body[data-theme="3"]{
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
@@ -78,60 +78,60 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
-  padding: 0;
+    font: inherit;
+    padding: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* */
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ body{
 
 /* Calculator */
 
-.calc{
+.calc {
     width: 327px;
     max-width: 540px;
     display: flex;
@@ -151,13 +151,13 @@ body{
     font-size: var(--fs-700);
 }
 
-@media screen and (min-width:376px){
-    .calc{
+@media screen and (min-width:376px) {
+    .calc {
         width: 100%;
     }
 }
 
-.calc__title{
+.calc__title {
     font-size: var(--fs-500);
     display: flex;
     flex-direction: row;
@@ -165,25 +165,26 @@ body{
     align-items: flex-end;
 }
 
-.calc__themes{
+.calc__themes {
     display: flex;
     flex-direction: row;
-    flex-grow:  2;
+    flex-grow: 2;
     justify-content: right;
     gap: 0.875rem;
 }
 
-.calc__slider{
+.calc__slider {
     width: 72px;
     height: 26px;
     cursor: pointer;
     background: var(--clr-calc-background);
     border-radius: 14px;
     padding: 5px;
-    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
 }
 
-.calc__slider::before{
+.calc__slider::before {
     position: absolute;
     font-size: var(--fs-500);
     content: "1 2 3";
@@ -208,24 +209,24 @@ body{
     cursor: pointer;
 }
 
-.calc__buttons{
+.calc__buttons {
     background-color: var(--clr-calc-background);
     width: 100%;
     padding: 1.875rem;
     display: grid;
     gap: 1.5625rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "seven eight nine del"
-    "four five six add"
-    "one two three substract"
-    "dot zero divide multiply"
-    "reset reset equal equal";
+    grid-template-areas:
+        "seven eight nine del"
+        "four five six add"
+        "one two three substract"
+        "dot zero divide multiply"
+        "reset reset equal equal";
     font-size: var(--fs-600);
     border-radius: 1rem;
 }
 
-.calc__screen{
+.calc__screen {
     background-color: var(--clr-screen-background);
     height: 128px;
     padding: 1.5rem 0.5em;
@@ -237,19 +238,19 @@ body{
     flex-direction: column;
 }
 
-.calc__result{
+.calc__result {
     display: inline-block;
     width: 100%;
     text-align: right;
 }
 
-.calc__prevResult{
+.calc__prevResult {
     width: 100%;
     font-size: 0.25em;
     text-align: right;
 }
 
-.calc__key{
+.calc__key {
     height: 60px;
     border: 0;
     border-radius: 0.25em;
@@ -259,37 +260,37 @@ body{
     color: var(--clr-key-text);
 }
 
-.calc__key:hover{
+.calc__key:hover {
     background-color: var(--clr-key-shadow);
     cursor: pointer;
 }
 
-.calc__key--variant2{
+.calc__key--variant2 {
     background-color: var(--clr-key-variant2-background);
     box-shadow: 0 4px var(--clr-key-variant2-shadow);
     color: var(--clr-key-variant2-text);
 }
 
-.calc__key--variant2:hover{
+.calc__key--variant2:hover {
     background-color: var(--clr-key-variant2-shadow);
 }
 
-.calc__key--variant1{
+.calc__key--variant1 {
     background-color: var(--clr-key-variant1-background);
     box-shadow: 0 4px var(--clr-key-variant1-shadow);
     color: var(--clr-key-variant1-text);
 }
 
-.calc__key--variant1:hover{
+.calc__key--variant1:hover {
     background-color: var(--clr-key-variant1-shadow);
 }
 
-@media screen and (max-width:375px){
-    .calc{
+@media screen and (max-width:375px) {
+    .calc {
         font-size: var(--fs-400);
     }
 
-    .calc__buttons{
+    .calc__buttons {
         font-size: 1.25em;
         padding: 1.5em;
         gap: 1.25em;
