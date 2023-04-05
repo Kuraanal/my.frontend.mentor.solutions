@@ -92,15 +92,16 @@ body {
   font-size: 0.9375rem;
   padding: 5.5em 1.5em 0 1.5em;
   background-color: var(--clr-neutral);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 
 .container {
   max-width: 57.5rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
   border-radius: 0.5em;
   overflow: hidden;
 
@@ -108,7 +109,6 @@ body {
 }
 
 .container__block {
-  flex: 1;
   padding: 3em;
   display: flex;
   flex-direction: column;
@@ -173,7 +173,8 @@ body {
   }
 
   .container {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     height: fit-content;
   }
 
