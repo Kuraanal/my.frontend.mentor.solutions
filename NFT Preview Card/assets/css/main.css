@@ -1,0 +1,205 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Variables */
+:root {
+
+    --clr-primary: hsl(215, 51%, 70%);
+    --clr-secondary: hsl(178, 100%, 50%);
+
+    --clr-neutral: hsl(217, 54%, 11%);
+    --clr-neutral-medium: hsl(216, 50%, 16%);
+    --clr-neutral-light: hsl(215, 32%, 27%);
+    --clr-neutral-dark: hsl(216, 53%, 7%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.1rem;
+    --fs-600: 1.2rem;
+    --fs-700: 1.5rem;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --ff-primary: 'Outift', sans-serif;
+
+    font-size: 18px;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Layout */
+
+body {
+    font-weight: var(--fw-300);
+    font-family: var(--ff-primary);
+
+    background-color: var(--clr-neutral);
+    color: var(--clr-primary);
+
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: var(--clr-neutral-medium);
+    box-shadow: -0.5rem 1.25rem 0.5rem var(--clr-neutral-dark),
+        0.5rem 1.25rem 0.5rem var(--clr-neutral-dark);
+}
+
+/* Image styling */
+.card__image {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image:hover :is(.image__overlay, .overlay__icon) {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image__overlay,
+.overlay__icon {
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.image__overlay {
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: var(--clr-secondary);
+}
+
+.overlay__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Card infos */
+
+.card .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__Infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--clr-neutral-light);
+    padding-bottom: 1rem;
+}
+
+.card__Infos::after {
+    border-bottom: 1px solid var(--clr-neutral-light);
+}
+
+.card__Infos img {
+    display: inline-block;
+    place-content: center;
+}
+
+.card__price {
+    color: var(--clr-secondary);
+    font-weight: var(--fw-600);
+}
+
+.card__author {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-300);
+}
+
+.author__image {
+    width: 32px;
+    aspect-ratio: 1;
+    border: 1px solid var(--clr-neutral-white);
+    border-radius: 2rem;
+}
+
+a {
+    color: var(--clr-neutral-white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-secondary);
+}
