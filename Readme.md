@@ -23,3 +23,7 @@
 ## NFT Preview Card
 
 [Live](https://kuraanal.github.io/my.frontend.mentor.solutions/NFT%20Preview%20Card/) | [Repo](./NFT%20Preview%20Card/) | [Try it out](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+
+## Article Preview Component
+
+[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Article%20Preview%20Component/) | [Repo](./Article%20Preview%20Component/) | [Try it out](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
