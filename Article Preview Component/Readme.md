@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/simple-preview-card-eU7qHOEJPw">
+    <a href="https://www.frontendmentor.io/solutions/article-preview-with-social-media-popup-QpT-1ARPms">
       Solution
     </a>
    <span> | </span>
