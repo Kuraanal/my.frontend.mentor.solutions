@@ -16,9 +16,7 @@
   --fs-700: 2rem;
 
   --ff-primary: 'Montserrat', sans-serif;
-  ;
   --ff-secondary: 'Fraunces', serif;
-  ;
 }
 
 /* Reset */
@@ -94,10 +92,8 @@ select {
 body {
   background-color: hsl(var(--clr-primary));
   font-family: var(--ff-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 /* Card elements */
@@ -105,39 +101,23 @@ body {
 .card {
   background-color: hsl(var(--clr-neutral-light));
   color: hsl(var(--clr-neutral));
-
-  width: 90%;
-  max-width: 725px;
-
+  max-width: 340px;
   border-radius: 0.75em;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
-
   box-shadow: 0.5rem 0.75rem 0.7rem hsla(var(--clr-accent), 0.5);
 }
 
-.card__image {
-  overflow: hidden;
-  padding: 0;
-}
-
 .card__content {
-  padding-bottom: 1.5em;
-
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 0.75em;
-
-  padding: 1em;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.card__content>* {
-  margin-bottom: 0.5em;
-}
-
-.card__type {
+.card__category {
   letter-spacing: 0.5em;
   font-size: 0.85em;
   color: hsl(var(--clr-neutral));
@@ -159,7 +139,7 @@ body {
   font-family: var(--ff-secondary);
   font-weight: 700;
   display: flex;
-  gap: 0.35em;
+  gap: 0.8125em;
 }
 
 .card__price--barred {
@@ -195,11 +175,12 @@ body {
 
 @media only screen and (min-width: 760px) {
   .card {
+    max-width: 725px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .card__content {
-    padding: 2em 4em;
+    padding: 1rem 2.5rem;
   }
 }
