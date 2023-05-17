@@ -88,45 +88,34 @@ select {
 body {
   padding: 0.75rem 1.5rem;
   background-color: var(--clr-neutral-dark);
-
   font-size: 0.935rem;
   font-family: 'Outfit', sans-serif;
   color: var(--clr-primary);
-}
-
-main {
-  max-width: 1440px;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 /* QR Code component */
 
 .card {
   background-color: var(--clr-neutral);
-  padding: 0.875em;
-  border-radius: 0.875em;
+  padding: 1rem;
+  border-radius: 0.875rem;
   max-width: 320px;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  gap: 0.8125rem;
   box-shadow: 0.25rem 0.5rem 0.7rem var(--clr-secondary);
 }
 
 .card>*:not(:first-child) {
-  padding: 0.25em 0.3em;
   text-align: center;
 }
 
-.card__picture {
-  border-radius: 0.5em;
-  overflow: hidden;
+.card__picture img {
+  border-radius: 0.875em;
 }
 
 .card__title {
