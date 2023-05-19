@@ -1,29 +1,23 @@
-# My Solutions to FrontEnd Mentor challenges
+# Frontend-Mentor-Challenges
 
-## Product preview card component
+This repo contains my solutions to [Frontend Mentor](https://www.frontendmentor.io/) Challenges.
 
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Product%20preview%20card%20component/) | [Repo](./Product%20preview%20card%20component/) | [Try it out](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
+## Finished Projects
 
-## Single price grid component
+| Difficulty   |                                           |
+| ------------ | ----------------------------------------- |
+| Newbie       | :fire:                                    |
+| Junior       | :fire: :fire:                             |
+| Intermediate | :fire: :fire: :fire:                      |
+| Advanced     | :fire: :fire: :fire: :fire: :fire:        |
+| Guru         | :fire: :fire: :fire: :fire: :fire: :fire: |
 
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Single%20price%20grid%20component) | [Repo](./Single%20price%20grid%20component/) | [Try it out](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
-
-## QR Code component
-
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/QR%20code%20component/) | [Repo](./QR%20code%20component/) | [Try it out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
-
-## 3-column preview card component
-
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/3-column%20preview%20card%20component/) | [Repo](./3-column%20preview%20card%20component/) | [Try it out](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
-
-## Calculator App
-
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Calculator%20app/) | [Repo](./Calculator%20app/) | [Try it out](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
-
-## NFT Preview Card
-
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/NFT%20Preview%20Card/) | [Repo](./NFT%20Preview%20Card/) | [Try it out](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
-
-## Article Preview Component
-
-[Live](https://kuraanal.github.io/my.frontend.mentor.solutions/Article%20Preview%20Component/) | [Repo](./Article%20Preview%20Component/) | [Try it out](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+| Name                                                                                                                              | Difficulty           | Technologies / Approaches | Repo                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| [Article Preview Component](https://kuraanal.github.io/my.frontend.mentor.solutions/Article%20Preview%20Component/)               | :fire:               | HTML, CSS, JS             | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/blob/master/Article%20Preview%20Component/)        |
+| [Single price grid component](https://kuraanal.github.io/my.frontend.mentor.solutions/Single%20price%20grid%20component)          | :fire:               | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/Single%20price%20grid%20component)     |
+| [QR code component](https://kuraanal.github.io/my.frontend.mentor.solutions/QR%20code%20component/)                               | :fire:               | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/QR%20code%20component)                 |
+| [3-column preview card component](https://kuraanal.github.io/my.frontend.mentor.solutions/3-column%20preview%20card%20component/) | :fire:               | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/3-column%20preview%20card%20component) |
+| [NFT preview card component](https://kuraanal.github.io/my.frontend.mentor.solutions/NFT%20Preview%20Card/)                       | :fire:               | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/NFT%20Preview%20Card)                  |
+| [Product preview card component](https://kuraanal.github.io/my.frontend.mentor.solutions/Product%20preview%20card%20component/)   | :fire:               | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/Product%20preview%20card%20component)  |
+| [Calculator app](https://mesutcifci.github.io/Frontend-Mentor-Challenges/article-preview-component-master/index.html)             | :fire: :fire: :fire: | HTML, CSS                 | [repo](https://github.com/Kuraanal/my.frontend.mentor.solutions/tree/master/Calculator%20app)                      |
