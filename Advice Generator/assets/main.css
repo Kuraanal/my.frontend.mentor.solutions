@@ -1,0 +1,155 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* Variables */
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+
+    font-size: 28px;
+    font-family: Manrope;
+    height: 100dvh;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Layout */
+
+body {
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-blue);
+}
+
+main{
+    max-width: 1200px;
+}
+
+/* card */
+
+.card {
+    background-color: var(--dark-grayish-blue);
+    padding: 1rem 1.25rem 0 1.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card__advice-number {
+    color: var(--neon-green);
+    font-size: 0.75rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.card__advice-text {
+    color: var(--light-cyan);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card__dice {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    background-image: url(./images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    transition: all 0.3s ease;
+    transform: translateY(50%);
+}
+
+.card__dice:hover {
+    background-color: hsl(150, 100%, 76%);
+    cursor: pointer;
+    box-shadow: 0 0 32px var(--neon-green);
+}
+
+@media (width < 390px) {
+    main {
+        max-width: 325px;
+    }
+    .card__advice-text {
+        font-size: 1rem;
+    }
+
+    .card__advice-number {
+        font-size: 0.65rem;
+    }
+    
+}
