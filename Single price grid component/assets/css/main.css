@@ -18,6 +18,8 @@
     --fw-700: 700;
 
     --ff-primary: 'Karla', sans-serif;
+
+    height: 100dvh;
 }
 
 /* Reset */
@@ -46,7 +48,6 @@ html:focus-within {
 }
 
 body {
-    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -84,6 +85,7 @@ select {
 }
 
 body {
+    min-height: 100%;
     background-color: var(--clr-neutral-light);
     font-family: var(--ff-primary);
     color: var(--clr-neutral);
@@ -105,7 +107,7 @@ ul {
 
 .card {
     width: calc(100vw - 4em);
-    margin: auto;
+    margin: 1.5rem 0;
     background-color: white;
     border-radius: 0.5em;
     overflow: hidden;
@@ -176,12 +178,13 @@ ul {
     text-align: center;
 
     border-radius: 0.25em;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
     font-size: var(--fs-600);
 }
 
 .card__button:hover {
     background-color: var(--clr-accent-light);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 760px) {

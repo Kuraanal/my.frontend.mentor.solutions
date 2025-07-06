@@ -90,7 +90,7 @@ select {
 body {
   font-family: var(--ff-primary);
   font-size: 0.9375rem;
-  padding: 5.5em 1.5em 0 1.5em;
+  margin: 1.5rem;
   background-color: var(--clr-neutral);
   display: grid;
   place-content: center;
