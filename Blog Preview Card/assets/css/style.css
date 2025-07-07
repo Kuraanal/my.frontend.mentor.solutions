@@ -92,6 +92,7 @@ body {
     gap: 1.5rem;
 
     box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 1);
+    border: 1px solid var(--color-gray-950);
 }
 
 .card__image{
