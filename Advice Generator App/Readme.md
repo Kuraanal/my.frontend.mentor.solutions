@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://www.frontendmentor.io/solutions/advice-generator-app-Hqek-3Are3">
       Solution
     </a>
    <span> | </span>

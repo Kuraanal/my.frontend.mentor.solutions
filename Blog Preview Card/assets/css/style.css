@@ -1,0 +1,162 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+/* Css Reset */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+/* Variables */
+
+:root {
+    --color-primary: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+
+    --fw-primary: 500;
+    --fw-secondary: 800;
+
+    /* Values */
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+    max-width: 100%;
+    font-weight: var(--fw-primary);
+    color: var(--color-gray-950);
+}
+
+/* Layout */
+body {
+    background-color: var(--color-primary);
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    max-width: 384px;
+    background-color: var(--color-white);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 1);
+}
+
+.card__image{
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card__tag {
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-primary);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: var(--fw-secondary);
+}
+
+.card__date {
+    font-size: 0.875rem;
+}
+
+.card__link {
+    text-decoration: none;
+    color: var(--color-gray-950);
+}
+
+.card__link:hover,
+.card__link:focus-visible {
+    color: var(--color-primary);
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-secondary);
+}
+
+
+.card__description {
+    color: var(--color-gray-500);
+}
+
+.card__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: var(--fw-secondary);
+}
+
+.card__author img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (width < 390px){
+    :root{
+        font-size: 14px;
+    }
+
+    .card {
+        max-width: 327px;
+    }
+}
