@@ -9,7 +9,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://www.frontendmentor.io/solutions/responsive-card-component-joqHdeVvjC">
       Solution
     </a>
    <span> | </span>

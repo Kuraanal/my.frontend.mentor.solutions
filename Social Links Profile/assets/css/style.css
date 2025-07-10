@@ -1,0 +1,147 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Css Reset */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+/* Variables */
+
+:root {
+    --color-accent: #c5f82a;
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-900: hsl(0, 0%, 8%);
+
+    --fw-primary: 400;
+    --fw-secondary: 600;
+    --fw-tertiary: 700;
+
+    /* Values */
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    max-width: 100%;
+    font-weight: var(--fw-primary);
+    color: var(--color-white);
+}
+
+/* Layout */
+body {
+    background-color: var(--color-gray-900);
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    width: 410px;
+    background-color: var(--color-gray-800);
+    border-radius: 1.125rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    padding: 3rem;
+
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.card__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.card__location {
+    color: var(--color-accent);
+    font-weight: var(--fw-secondary);
+}
+
+.card__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0.25rem;
+    border-radius: 0.7rem;
+    background-color: var(--color-gray-700);
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-weight: var(--fw-tertiary);
+}
+
+.card__link:hover {
+    background-color: var(--color-accent);
+    color: var(--color-gray-900);
+}
+
+@media (width < 390px) {
+    :root{
+        font-size: 12px;
+    }
+
+    .card {
+        width: 327px
+    }
+}
